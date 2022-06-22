@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('asal_daerah');
             $table->string('no_hp');
             $table->string('email');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
