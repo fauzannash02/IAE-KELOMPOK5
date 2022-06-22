@@ -52,7 +52,7 @@ class PelangganController extends Controller
             ]);
 
             $pelanggan = Pelanggan::create([
-                'nama_pelanggan' => $request->nama_kamar,
+                'nama_pelanggan' => $request->nama_pelanggan,
                 'tanggal_lahir' => $request->tanggal_lahir,
                 'jenis_kelamin' => $request->jenis_kelamin,
                 'asal_daerah' => $request->asal_daerah,
@@ -123,7 +123,7 @@ class PelangganController extends Controller
             $pelanggan = Pelanggan::findOrfail($id);
 
             $pelanggan->update([
-                'nama_pelanggan' => $request->nama_kamar,
+                'nama_pelanggan' => $request->nama_pelanggan,
                 'tanggal_lahir' => $request->tanggal_lahir,
                 'jenis_kelamin' => $request->jenis_kelamin,
                 'asal_daerah' => $request->asal_daerah,
